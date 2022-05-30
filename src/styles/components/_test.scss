@@ -1,0 +1,71 @@
+@import "variables";
+
+.Test {
+  margin: 1rem;
+
+  header {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: $color__blue--strong;
+  }
+
+  &__item {
+    width: 90%;
+    border: solid 1px $color__blue;
+    border-radius: 10px;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem;
+
+      img {
+        display: flex;
+        justify-content: center;
+        width: 40%;
+      }
+
+      h2 {
+        color: $color__blue--strong;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+
+  &__questionary {
+    margin: 0.5rem 0 0.5rem 0;
+    font-size: 1rem;
+    color: $color__primary;
+
+    p::first-letter{
+      font-size: 1.4rem;
+      color: $color__blue--strong;
+    }
+
+    ol {
+      margin: 0.5rem 0 0.5rem 1.5rem;
+      // display: flex;
+      // flex-direction: row;
+      // justify-content: space-around;
+      li {
+        margin: 0.25rem;
+        font-size: 0.9rem;
+        color: $color__secondary;
+        font-style: italic;
+        &:hover{
+          cursor: pointer;
+          color: $color__blue--strong;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width:800px) {
+  .Test {
+    &__item {
+      width: 20%;
+    }
+  }
+}

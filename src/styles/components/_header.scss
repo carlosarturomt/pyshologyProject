@@ -1,0 +1,15 @@
+@import "variables";
+
+.Header {
+  margin-top: 0.5rem;
+  h1 {
+    a {
+     color: $color__blue--strong;
+    }
+  }
+  nav {
+    a {
+      color: $color__primary;
+    }
+  }
+}

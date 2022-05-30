@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap');
+
+// -----------------
+// V A R I A B L E S
+// -----------------
+$color__dark: #0c0c0c;
+$color__light: #f6f8fa;
+
+$color__light--variable: #ececec;
+$color__primary: #000e20;
+$color__secondary: #00313f;
+$color__tertiary: #22bced;
+$color__light--transparent: rgba(0, 19, 57, 0.8);;
+$color__gray--dark: #222222;
+$color__gray--light: rgb(43, 43, 43);
+
+$color__blue: #3767cb;
+$color__blue--light: #c6d9f3;
+$color__blue--strong: #2b399e;
+$font__primary: 'Ubuntu', sans-serif;
+
+// ------------------
+// M I X I N S
+// ------------------
+@mixin theme_background($color) {
+	body.dark & {
+		background-color: $color;
+	}
+}
+
+@mixin theme_border($property, $color) {
+	body.dark & {
+		border: $property solid $color;
+	}
+}
+
+@mixin icons-24h {
+	height: 24px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}

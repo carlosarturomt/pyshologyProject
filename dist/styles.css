@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #b14343;
+  color: #8ab946;
+  font-family: "Open Sans", sans-serif;
+  background-image: url("https://detexcoco.com/assets/imgs/cosmos.jpg");
+}
+
+.test-item img {
+  width: 100px;
+}

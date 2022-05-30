@@ -1,0 +1,14 @@
+@import "components/global";
+@import "components/header";
+@import "components/test";
+
+.Flex {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+hr {
+  color: $color__blue--strong;
+}
