@@ -1,13 +1,120 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap");
-body {
-  margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap");
+* {
+  box-sizing: border-box;
   padding: 0;
-  background-color: #b14343;
-  color: #8ab946;
-  font-family: "Open Sans", sans-serif;
-  background-image: url("https://detexcoco.com/assets/imgs/cosmos.jpg");
+  margin: 0;
 }
 
-.test-item img {
-  width: 100px;
+html main {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  overflow: scroll;
+  overflow-x: hidden;
+  background: #f6f8fa;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #222222;
+}
+
+input:focus {
+  outline: none;
+}
+
+.Header {
+  margin-top: 0.5rem;
+}
+.Header h1 a {
+  color: #2b399e;
+}
+.Header nav a {
+  color: #000e20;
+}
+
+.Test {
+  margin: 1rem;
+}
+.Test header {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #2b399e;
+}
+.Test__item {
+  width: 90%;
+  border: solid 1px #3767cb;
+  border-radius: 10px;
+}
+.Test__item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+.Test__item a img {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+.Test__item a h2 {
+  color: #2b399e;
+  margin-left: 0.5rem;
+}
+.Test__questionary {
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 1rem;
+  color: #000e20;
+}
+.Test__questionary p::first-letter {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #2b399e;
+}
+.Test__questionary ol {
+  margin: 0.5rem 0 1rem 1.5rem;
+}
+.Test__questionary ol label {
+  margin: 0.25rem;
+  font-size: 0.9rem;
+  color: #00313f;
+  font-style: italic;
+}
+.Test__questionary ol label:hover {
+  cursor: pointer;
+  color: #2b399e;
+}
+.Test__questionary ol label::first-letter {
+  font-size: 1.4rem;
+  color: #2b399e;
+}
+
+@media screen and (min-width: 800px) {
+  .Test__item {
+    width: 20%;
+  }
+}
+.Flex {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+hr {
+  color: #2b399e;
 }

@@ -1,5 +1,5 @@
 const Hamilton = () => {
-  const view = `
+  const view = /* html */ `
   <div class="Test">
     <header>Hamilton Anxiety Rating Scale , HARS</header>
     <article class="Test__questionary">
@@ -9,20 +9,56 @@ const Hamilton = () => {
 
     <hr>
 
-    <article class="Test__questionary">
-      <p>1. Humor ansioso (inquietud, espera de lo peor, aprensión [anticipación temerosa], irritabilidad)</p>
+    <form class="Test__questionary" action="" name="">
+      <aside>
+        <label>1. Humor ansioso (inquietud, espera de lo peor, aprensión [anticipación temerosa], irritabilidad)</label>
+        <ol>
+          <input type="radio" id="0" name="anxiety_humor" value="0">
+          <label for="0">Nunca</label><br>
 
-      <ol>
-        <li>a) Nunca</li>
-        <li>b) Una vez a la semana</li>
-        <li>c) 2/3 veces por semana</li>
-        <li>d) 4/5 veces por semana</li>
-        <li>e) 6/7 veces por semana</li>
-      <ol/>
-    </article>
+          <input type="radio" id="1" name="anxiety_humor" value="1">
+          <label for="1">Una vez a la semana</label><br>
+
+          <input type="radio" id="3" name="anxiety_humor" value="3">
+          <label for="3">2/3 veces por semana</label><br>
+
+          <input type="radio" id="4" name="anxiety_humor" value="4">
+          <label for="4">4/5 veces por semana</label><br>
+
+          <input type="radio" id="5" name="anxiety_humor" value="5">
+          <label for="5">6/7 veces por semana</label><br>
+        </ol>
+      </aside>
+
+      <aside>
+        <label>2. Tensión(sensación de tensión, fatigabilidad, imposibilidad de relajarse, llanto fácil, temblor, sensación de no poder quedarse en un lugar)</label>
+        <ol>
+          <input type="radio" id="0" name="tension" value="0">
+          <label for="0">Nunca</label><br>
+  
+          <input type="radio" id="1" name="tension" value="1">
+          <label for="1">Una vez a la semana</label><br>
+  
+          <input type="radio" id="3" name="tension" value="3">
+          <label for="3">2/3 veces por semana</label><br>
+  
+          <input type="radio" id="4" name="tension" value="4">
+          <label for="4">4/5 veces por semana</label><br>
+  
+          <input type="radio" id="5" name="tension" value="5">
+          <label for="5">6/7 veces por semana</label><br>
+        </ol>
+      </aside>
+
+      <button id="" type="button" onclick="onClickButtonTotalHamilton()">Calculate</button>
+    </form>
   </div>
   `;
   return view;
 };
+
+function onClickButtonTotalHamilton() {
+  console.log("ptm");
+}
 
 export default Hamilton;
