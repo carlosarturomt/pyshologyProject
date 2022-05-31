@@ -1,5 +1,5 @@
 const Error404 = () => {
-  const view = `
+  const view = /*html*/`
     <div class="Error404">
       <h2>Error 404</h2>
     </div>
